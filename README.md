@@ -165,12 +165,16 @@ We sincerely appreciate the following projects for their awesome codebases:
 If RuleNet has been helpful in your research, please consider citing our work:
 
 ```bibtex
-@article{rulenet2024,
-  title={RuleNet: rule-priority-aware multi-agent trajectory prediction in ambiguous traffic scenarios},
-  author={Ruolin Shi and Xuesong Wang and Yang Zhou and Meixin Zhu},
-  journal={Transportation Research Part C: Emerging Technologies},
-  year={2025}
-}
+@article{shi2025rulenet,
+title = {RuleNet: rule-priority-aware multi-agent trajectory prediction in ambiguous traffic scenarios},
+journal = {Transportation Research Part C: Emerging Technologies},
+volume = {180},
+pages = {105339},
+year = {2025},
+issn = {0968-090X},
+doi = {https://doi.org/10.1016/j.trc.2025.105339},
+url = {https://www.sciencedirect.com/science/article/pii/S0968090X25003432},
+author = {Ruolin Shi and Xuesong Wang and Yang Zhou and Meixin Zhu}
 ```
 
 
