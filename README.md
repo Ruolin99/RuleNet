@@ -75,8 +75,7 @@ Data directory structure:
 ```bash
 python train.py \
     --root /path/to/interaction/data \
-    --devices 1 \
-    --max_epochs 100
+    --devices 1 
 ```
 
 ### Multi-GPU Training
@@ -84,10 +83,7 @@ python train.py \
 ```bash
 python train.py \
     --root /path/to/interaction/data \
-    --devices 4 \
-    --accelerator gpu \
-    --strategy ddp \
-    --max_epochs 100
+    --devices 4 
 ```
 
 ### Main Training Parameters
