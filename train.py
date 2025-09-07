@@ -16,7 +16,7 @@ if __name__ == '__main__':
     pl.seed_everything(1024, workers=True)
 
     parser = ArgumentParser()
-    parser.add_argument('--root', type=str, default='/media/tongji-slr/A2CA5848710DCEAE/INTERACTION-Dataset-DR-multi-v1_2')
+    parser.add_argument('--root', type=str, required=True)
     parser.add_argument('--train_batch_size', type=int, default=1)
     parser.add_argument('--val_batch_size', type=int, default=1)
     parser.add_argument('--shuffle', type=bool, default=True)
@@ -26,7 +26,7 @@ if __name__ == '__main__':
     parser.add_argument('--flip_p', type=float, default=0.5)
     parser.add_argument('--agent_occlusion_ratio', type=float, default=0.0)
     parser.add_argument('--lane_occlusion_ratio', type=float, default=0.2)
-    parser.add_argument('--devices', type=int, default=1)
+    parser.add_argument('--devices', type=int, required=True)
     parser.add_argument('--max_epochs', type=int, default=100)
     RuleNet.add_model_specific_args(parser)
     args = parser.parse_args()
