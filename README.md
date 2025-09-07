@@ -144,7 +144,7 @@ RuleNet integrates multiple key components:
 - **Distance Violation Detection**: Monitors spatial constraints
 - **Multi-Agent Safety**: Handles interactions between vehicles and VRUs
 
-## Key Features
+### Key Features
 
 - **Safety-Oriented Design**: Integrates Time-to-Collision (TTC) and distance violation assessment mechanisms
 - **Multi-Modal Prediction**: Supports multi-trajectory prediction modes for improved robustness
