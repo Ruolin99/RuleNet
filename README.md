@@ -1,15 +1,6 @@
-This repository is the implementation of RuleNet: rule-priority-aware multi-agent trajectory prediction in ambiguous traffic scenarios published in Transportation Research Part C: Emerging Technologies.
+**This repository is the implementation of RuleNet: rule-priority-aware multi-agent trajectory prediction in ambiguous traffic scenarios published in Transportation Research Part C: Emerging Technologies.**
 
 RuleNet is a specialized framework for safety-aware multi-agent trajectory prediction. It combines graph attention networks with rule-based robustness attention mechanisms to simultaneously predict future trajectories of multiple traffic participants while evaluating trajectory safety.
-
-## 🎯 Key Features
-
-- **Safety-Oriented Design**: Integrates Time-to-Collision (TTC) and distance violation assessment mechanisms
-- **Multi-Modal Prediction**: Supports multi-trajectory prediction modes for improved robustness
-- **Graph Attention Networks**: Utilizes graph structures to model interactions between agents
-- **Robustness Attention**: Rule-based attention mechanisms to enhance prediction accuracy
-- **PyTorch Lightning**: Built on PyTorch Lightning framework for easy training and deployment
-- **INTERACTION Dataset**: Supports large-scale traffic scenario trajectory prediction tasks
 
 ## 📋 Requirements
 
@@ -105,7 +96,7 @@ python train.py \
 |-----------|-------------|---------|
 | `--hidden_dim` | Hidden dimension | 128 |
 | `--num_modes` | Number of trajectory modes | 6 |
-| `--num_attn_layers` | Number of attention layers | 3 |
+| `--num_attn_layers` | Number of attention layers | 8 |
 | `--lr` | Learning rate | 5e-4 |
 | `--weight_decay` | Weight decay | 1e-4 |
 
@@ -153,6 +144,14 @@ RuleNet integrates multiple key components:
 - **Distance Violation Detection**: Monitors spatial constraints
 - **Multi-Agent Safety**: Handles interactions between vehicles and VRUs
 
+### Key Features
+
+- **Safety-Oriented Design**: Integrates Time-to-Collision (TTC) and distance violation assessment mechanisms
+- **Multi-Modal Prediction**: Supports multi-trajectory prediction modes for improved robustness
+- **Graph Attention Networks**: Utilizes graph structures to model interactions between agents
+- **Robustness Attention**: Rule-based attention mechanisms to enhance prediction accuracy
+  
+
 ## 🤝 Acknowledgements
 
 We sincerely appreciate the following projects for their awesome codebases:
@@ -176,7 +175,7 @@ If RuleNet has been helpful in your research, please consider citing our work:
 
 
 ## 📞 Contact
-If you have any questions, feel free to contact us
+If you have any questions, feel free to contact us:
 - **Email**: 2111224@tongji.edu.cn
 - **GitHub**: [@Ruolin99](https://github.com/Ruolin99)
 
